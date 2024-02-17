@@ -27,7 +27,8 @@ export function TWCard ({formatUser, userName, children}) {
 
         <aside>
             <button className={buttonClassName} onClick={handleClik}>
-                {text}
+                <span className='tw-text'>{text}</span>
+                <span className='tw-stop'>Dejar de seguir</span>
             </button>
         </aside>
     </article>

@@ -38,16 +38,35 @@
     transition: .3s ease backgraund-color;
 }
 
+.tw-text {
+    display: block;
+}
+
 .tw-a-button.is-following {
-    border: 1px solid rgb(209, 75, 75);
+    border: 1px solid rgb(75, 70, 70);
+    background: transparent;
+    color: #fff;
+    width: 140px;
 }
 
 .tw-a-button:hover {
-    background-color: #09f;
+    opacity: .8;;
 }
 
 .tw-a-button.is-following:hover {
-    background: red;
-    color: #fff ;
+    background: rgba(221, 87, 87, 0.158);
+    color: #e21a1a ;
+    border: 1px solid red;
 }
 
+.tw-a-button.is-following:hover .tw-text {
+    display: none;
+}
+
+.tw-a-button.is-following:hover .tw-stop {
+    display: block;
+}
+
+.tw-stop {
+    display: none;
+}
